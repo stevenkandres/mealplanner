@@ -10,6 +10,8 @@
 <body>
 
     <div class="container mt-4">
+
+        <!-- TABS -->
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <button class="nav-link meal active" data-bs-toggle="tab" data-bs-target="#meal">Meal Plan</button>
@@ -22,15 +24,68 @@
             </li>
         </ul>
 
+
+        <!-- TAB CONTENT -->
         <div class="tab-content">
+
+            <!-- RANDOM MEAL GENERATOR -->
             <div class="tab-pane m-4 show active" id="meal">
-                <div class="container">
-                    <h1>Pick a meal!</h1>
+                <div class="container-fluid">
+                    <h3>Pick a meal!</h3>
+                </div>
+            </div>
+
+            <!-- RANDOM MEALS LIST -->
+            <div class="tab-pane m-4 show active" id="meal">
+                <div class="container-fluid">
+                    <h3>A few ideas for you</h3>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <h5 class="card-header">Highly rated!</h5>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Spaghetti</h4>
+                                        <p class="card-text">With garlic bread and a caesar salad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <h5 class="card-header">Highly rated!</h5>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Pizza</h4>
+                                        <p class="card-text">With a caesar salad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Sweet and Sour</h4>
+                                        <p class="card-text">With peas and a summer salad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card">
+                                    <h5 class="card-header">Easy meal!</h5>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Chicken wings</h4>
+                                        <p class="card-text">With fries.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
+
+            <!-- ADD A MEAL COMPONENT -->
             <div class="tab-pane m-4" id="add">
-                <h1>Add a meal component</h1>
+                <h3>Add a meal component</h3>
                 <form action="#">
                     <div class="my-3">
                         <label for="meal_name" class="form-label">Meal component</label>
@@ -49,8 +104,10 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
+
+            <!-- EDIT A MEAL COMPONENT -->
             <div class="tab-pane m-4" id="edit">
-                <h1>Edit a meal component</h1>
+                <h3>Edit a meal component</h3>
                 <form action="#">
                     <div class="my-3">
                         <label for="meal_select" class="form-label">Meal component</label>
