@@ -1,11 +1,13 @@
 DATABASE CHANGES:
 1. Add a rating for each item
 2. Add an 'ease factor' for each item
+3. When an item is saved, use an OpenAI call to select a stock image from Pexels or some other free stock photo service. (GET https://api.pexels.com/v1/search?query=spaghetti+on+plate&orientation=landscape&size=small&color=yellow&color=red&color=orange)
+3. b or use an OpenAI call: "Can you search pexels and retrieve the URL of a very typical photo of 'spaghetti' on a plate, preferring photos that are red, yellow, or orange? Photos need to be in the landscape orientation"
 
 
 
 BACKEND TASKS
-1. Allow adding meal components
-2. Allow editing meal components
+1. Allow adding meal components (and refreshing associated photo?)
+2. Allow editing meal components (and refreshing associated photo?)
 3. Meal Plan: Select and build a meal at random
 4. Meal Suggestions: Select and build several meals. Some highly rated, some easy. Present 5-10 options
