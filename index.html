@@ -43,105 +43,106 @@
                 <div class="container-fluid">
                     <h3>A few ideas for you</h3>
 
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <h5 class="card-header">Highly rated!</h5>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Spaghetti</h4>
-                                        <p class="card-text">With garlic bread and a caesar salad.</p>
-                                    </div>
+                    <div class="row g-4">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+                                <h5 class="card-header">Highly rated!</h5>
+                                <div class="card-body">
+                                    <h4 class="card-title">Spaghetti</h4>
+                                    <p class="card-text">With garlic bread and a caesar salad.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <h5 class="card-header">Highly rated!</h5>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Pizza</h4>
-                                        <p class="card-text">With a caesar salad.</p>
-                                    </div>
+                        </div>
+                        <div class="col-sm- col-md-4 col-lg-3">
+                            <div class="card">
+                                <h5 class="card-header">Highly rated!</h5>
+                                <div class="card-body">
+                                    <h4 class="card-title">Pizza</h4>
+                                    <p class="card-text">With a caesar salad.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Sweet and Sour</h4>
-                                        <p class="card-text">With peas and a summer salad.</p>
-                                    </div>
+                        </div>
+                        <div class="col-sm- col-md-4 col-lg-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sweet and Sour</h4>
+                                    <p class="card-text">With peas and a summer salad.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card">
-                                    <h5 class="card-header">Easy meal!</h5>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Chicken wings</h4>
-                                        <p class="card-text">With fries.</p>
-                                    </div>
+                        </div>
+                        <div class="col-sm- col-md-4 col-lg-3">
+                            <div class="card">
+                                <h5 class="card-header">Easy meal!</h5>
+                                <div class="card-body">
+                                    <h4 class="card-title">Chicken wings</h4>
+                                    <p class="card-text">With fries.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             <!-- ADD A MEAL COMPONENT -->
             <div class="tab-pane m-4" id="add">
-                <h3>Add a meal component</h3>
-                <form action="#">
-                    <div class="my-3">
-                        <label for="meal_name" class="form-label">Meal component</label>
-                        <input type="text" class="form-control" id="meal_name">
-                    </div>
-                    <div class="my-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="meal_type_main">
-                        <label for="meal_type_main">Main Course</label>
-                        <br>
-                        <input type="checkbox" class="form-check-input" id="meal_type_side">
-                        <label for="meal_type_side">Side</label>
-                        <br>
-                        <input type="checkbox" class="form-check-input" id="meal_type_salad">
-                        <label for="meal_type_salad">Salad</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <div class="container-fluid">
+                    <h3>Add a meal component</h3>
+                    <form action="#">
+                        <div class="my-3">
+                            <label for="meal_name" class="form-label">Meal component</label>
+                            <input type="text" class="form-control" id="meal_name">
+                        </div>
+                        <div class="my-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="meal_type_main">
+                            <label for="meal_type_main">Main Course</label>
+                            <br>
+                            <input type="checkbox" class="form-check-input" id="meal_type_side">
+                            <label for="meal_type_side">Side</label>
+                            <br>
+                            <input type="checkbox" class="form-check-input" id="meal_type_salad">
+                            <label for="meal_type_salad">Salad</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
 
             <!-- EDIT A MEAL COMPONENT -->
             <div class="tab-pane m-4" id="edit">
-                <h3>Edit a meal component</h3>
-                <form action="#">
-                    <div class="my-3">
-                        <label for="meal_select" class="form-label">Meal component</label>
-                        <select name="meal_select" id="meal_select" class="form-select">
-                            <!-- Populate these options from the database -->
-                            <option selected>Select an entry to edit</option>
-                            <option value="1">Spaghetti</option>
-                            <option value="2">Pizza</option>
-                            <option value="3">Sweet and Sour</option>
-                            <option value="4">Honey Garlic Chicken</option>
-                        </select>
-                    </div>
-                    <div class="my-3">
-                        <!-- Populate from the database -->
-                        <label for="meal_name" class="form-label">Meal name</label>
-                        <input type="text" class="form-control" id="meal_name">
-                    </div>
-                    <div class="my-3 form-check">
-                        <!-- Populate from the database -->
-                        <input type="checkbox" class="form-check-input" id="meal_type_main">
-                        <label for="meal_type_main">Main Course</label>
-                        <br>
-                        <input type="checkbox" class="form-check-input" id="meal_type_side">
-                        <label for="meal_type_side">Side</label>
-                        <br>
-                        <input type="checkbox" class="form-check-input" id="meal_type_salad">
-                        <label for="meal_type_salad">Salad</label>
-                    </div>
-                    <!-- On submit, update the selected entry -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <div class="container-fluid">
+                    <h3>Edit a meal component</h3>
+                    <form action="#">
+                        <div class="my-3">
+                            <label for="meal_select" class="form-label">Meal component</label>
+                            <select name="meal_select" id="meal_select" class="form-select">
+                                <!-- Populate these options from the database -->
+                                <option selected>Select an entry to edit</option>
+                                <option value="1">Spaghetti</option>
+                                <option value="2">Pizza</option>
+                                <option value="3">Sweet and Sour</option>
+                                <option value="4">Honey Garlic Chicken</option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <!-- Populate from the database -->
+                            <label for="meal_name" class="form-label">Meal name</label>
+                            <input type="text" class="form-control" id="meal_name">
+                        </div>
+                        <div class="my-3 form-check">
+                            <!-- Populate from the database -->
+                            <input type="checkbox" class="form-check-input" id="meal_type_main">
+                            <label for="meal_type_main">Main Course</label>
+                            <br>
+                            <input type="checkbox" class="form-check-input" id="meal_type_side">
+                            <label for="meal_type_side">Side</label>
+                            <br>
+                            <input type="checkbox" class="form-check-input" id="meal_type_salad">
+                            <label for="meal_type_salad">Salad</label>
+                        </div>
+                        <!-- On submit, update the selected entry -->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
