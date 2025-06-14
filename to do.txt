@@ -1,0 +1,11 @@
+DATABASE CHANGES:
+1. Add a rating for each item
+2. Add an 'ease factor' for each item
+
+
+
+BACKEND TASKS
+1. Allow adding meal components
+2. Allow editing meal components
+3. Meal Plan: Select and build a meal at random
+4. Meal Suggestions: Select and build several meals. Some highly rated, some easy. Present 5-10 options

@@ -46,7 +46,7 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <h6 class="card-header bg-warning text-white">Highly rated!</h6>
+                                <h6 class="card-header fs-4 bg-warning text-white">Highly rated!</h6>
                                 <div class="card-body">
                                     <h4 class="card-title">Spaghetti</h4>
                                     <p class="card-text">With garlic bread and a caesar salad.</p>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <h6 class="card-header bg-warning text-white">Highly rated!</h6>
+                                <h6 class="card-header fs-4 bg-warning text-white">Highly rated!</h6>
                                 <div class="card-body">
                                     <h4 class="card-title">Pizza</h4>
                                     <p class="card-text">With a caesar salad.</p>
@@ -72,7 +72,7 @@
                         </div>
                         <div class="col-sm-6 col-md-4 col-lg-3">
                             <div class="card">
-                                <h6 class="card-header bg-success text-white">Easy meal!</h6>
+                                <h6 class="card-header fs-4 bg-success text-white">Easy meal!</h6>
                                 <div class="card-body">
                                     <h4 class="card-title">Chicken wings</h4>
                                     <p class="card-text">With fries.</p>
@@ -101,6 +101,14 @@
                             <br>
                             <input type="checkbox" class="form-check-input" id="meal_type_salad">
                             <label for="meal_type_salad">Salad</label>
+                        </div>
+                        <div class="my-3">
+                            <label for="ease_factor" class="form-label">Ease Factor</label>
+                            <input type="range" min="0" max="5" class="form-range" id="ease_factor">
+                        </div>
+                        <div class="my-3">
+                            <label for="favorite_factor" class="form-label">Favorite Factor</label>
+                            <input type="range" min="0" max="5" class="form-range" id="favorite_factor">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -139,6 +147,15 @@
                             <input type="checkbox" class="form-check-input" id="meal_type_salad">
                             <label for="meal_type_salad">Salad</label>
                         </div>
+                        <div class="my-3">
+                            <label for="ease_factor" class="form-label">Ease Factor</label>
+                            <input type="range" min="0" max="5" class="form-range" id="ease_factor">
+                        </div>
+                        <div class="my-3">
+                            <label for="favorite_factor" class="form-label">Favorite Factor</label>
+                            <input type="range" min="0" max="5" class="form-range" id="favorite_factor">
+                        </div>
+                        
                         <!-- On submit, update the selected entry -->
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
