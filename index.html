@@ -24,10 +24,30 @@
 
         <div class="tab-content">
             <div class="tab-pane show active" id="meal">
-                Meal Content
+                <div class="container">
+                    <h1>Pick a meal!</h1>
+
+                </div>
             </div>
             <div class="tab-pane" id="add">
-                Add a meal
+                <h1>Add a meal component</h1>
+                <form action="#">
+                    <div class="my-3">
+                        <label for="meal_name" class="form-label">Meal component</label>
+                        <input type="text" class="form-control" id="meal_name">
+                    </div>
+                    <div class="my-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="meal_type_main">
+                        <label for="meal_type_main">Main Course</label>
+                        <br>
+                        <input type="checkbox" class="form-check-input" id="meal_type_side">
+                        <label for="meal_type_side">Side</label>
+                        <br>
+                        <input type="checkbox" class="form-check-input" id="meal_type_salad">
+                        <label for="meal_type_salad">Salad</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
             <div class="tab-pane" id="edit">
                 Edit a meal
