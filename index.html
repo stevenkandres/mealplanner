@@ -50,7 +50,38 @@
                 </form>
             </div>
             <div class="tab-pane m-4" id="edit">
-                Edit a meal
+                <h1>Edit a meal component</h1>
+                <form action="#">
+                    <div class="my-3">
+                        <label for="meal_select" class="form-label">Meal component</label>
+                        <select name="meal_select" id="meal_select" class="form-select">
+                            <!-- Populate these options from the database -->
+                            <option selected>Select an entry to edit</option>
+                            <option value="1">Spaghetti</option>
+                            <option value="2">Pizza</option>
+                            <option value="3">Sweet and Sour</option>
+                            <option value="4">Honey Garlic Chicken</option>
+                        </select>
+                    </div>
+                    <div class="my-3">
+                        <!-- Populate from the database -->
+                        <label for="meal_name" class="form-label">Meal name</label>
+                        <input type="text" class="form-control" id="meal_name">
+                    </div>
+                    <div class="my-3 form-check">
+                        <!-- Populate from the database -->
+                        <input type="checkbox" class="form-check-input" id="meal_type_main">
+                        <label for="meal_type_main">Main Course</label>
+                        <br>
+                        <input type="checkbox" class="form-check-input" id="meal_type_side">
+                        <label for="meal_type_side">Side</label>
+                        <br>
+                        <input type="checkbox" class="form-check-input" id="meal_type_salad">
+                        <label for="meal_type_salad">Salad</label>
+                    </div>
+                    <!-- On submit, update the selected entry -->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
